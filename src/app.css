@@ -8,9 +8,11 @@
   background-color: #FFD23F;
   position: relative;
   top: 70px;
+  scroll-snap-type: y mandatory;
 }
 
 .app .sections > * {
   width: 100vw;
   height: calc(100vh - 70px);
+  scroll-snap-align: start;
 }
