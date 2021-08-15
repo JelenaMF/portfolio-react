@@ -1,0 +1,9 @@
+.app {
+  height: 100vh;
+}
+
+.app .sections {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #FFD23F;
+}
