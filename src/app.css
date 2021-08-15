@@ -9,6 +9,11 @@
   position: relative;
   top: 70px;
   scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+}
+
+.app .sections::-webkit-scrollbar {
+  display: none;
 }
 
 .app .sections > * {
