@@ -2,9 +2,18 @@ import PortfolioList from '../portfolioList/PortfolioList';
 import { useEffect, useState} from 'react';
 import './portfolio.scss'
 
+import{
+    featuredPortfolio,
+    mobilePortfolio,
+    webPortfolio,
+    designPortfolio,
+    contentPortfolio
+} from "../../data";
+
 export default function Portfolio() {
     //decide whether active or not
-    const [selected, setSelected] = useState('featured')
+    const [selected, setSelected] = useState('featured');
+    const [data, setData] = useState([]);
     //create list array to map through;
     const list = [
         {
@@ -27,7 +36,29 @@ export default function Portfolio() {
             id: "content",
             title: "Content"
         }
-    ]
+    ];
+
+    useEffect(()=> {
+        switch(selected){
+            case "featured":
+                setData(featuredPortfolio);
+                break;
+                case "web":
+                setData(webPortfolio);
+                break;
+                case "mobile":
+                setData(mobilePortfolio);
+                break;
+                case "design":
+                setData(designPortfolio);
+                break;
+                case "content":
+                setData(contentPortfolio);
+                break;
+                default:
+                    setData(featuredPortfolio);
+        }
+    }, [selected])
     return (
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
@@ -42,30 +73,13 @@ export default function Portfolio() {
                 ))}
             </ul>
             <div className="container">
-                <div className="item">
-                    <img src="/assets/game250.jpg" alt="" />
-                    <h3>What's that Phrase? Game</h3>
-                </div>
-                <div className="item">
-                    <img src="/assets/game250.jpg" alt="" />
-                    <h3>What's that Phrase? Game</h3>
-                </div>
-                <div className="item">
-                    <img src="/assets/game250.jpg" alt="" />
-                    <h3>What's that Phrase? Game</h3>
-                </div>
-                <div className="item">
-                    <img src="/assets/game250.jpg" alt="" />
-                    <h3>What's that Phrase? Game</h3>
-                </div>
-                <div className="item">
-                    <img src="/assets/game250.jpg" alt="" />
-                    <h3>What's that Phrase? Game</h3>
-                </div>
-                <div className="item">
-                    <img src="/assets/game250.jpg" alt="" />
-                    <h3>What's that Phrase? Game</h3>
-                </div>
+                {data.map((d)=> (
+                    <div className="item">
+                        <img src={d.img} alt="" />
+                        <h3>{d.title}</h3>
+                    </div>
+                ))}
+               
                 
             </div>
         </div>
