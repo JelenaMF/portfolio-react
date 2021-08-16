@@ -1,3 +1,37 @@
 .intro{
-    background-color: #FF595E;
+    background-color: white;
+    display: flex;
+
+    .left{
+        flex: 0.5;
+        overflow: hidden;
+
+        .imgContainer{
+            width:700px;
+            height: 700px;
+            background-color: #A79AB2;
+            border-radius: 50%;
+            display:flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+        }
+        img{
+            height: 90%;
+        }
+        
+    }
+    .right{
+        flex:0.5;  
+        background-color: #73C1C6; 
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px;
+        }
+    }
 }
