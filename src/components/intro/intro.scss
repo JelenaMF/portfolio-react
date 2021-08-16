@@ -23,7 +23,7 @@
     }
     .right{
         flex:0.5;  
-        background-color: #73C1C6; 
+        /*background-color: #73C1C6; */
         position: relative;
 
         .wrapper{
@@ -48,6 +48,18 @@
                 span{
                     font-size: inherit;
                     color: #7f6792;
+                }
+                .ityped-cursor{
+                    animation: blink 1s infinite;
+                }
+
+                @keyframes blink {
+                    50%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
                 }
             }
         }
