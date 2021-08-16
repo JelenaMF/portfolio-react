@@ -13,11 +13,11 @@ export default function Intro() {
                     <h2>Hi There, I'm</h2>
                     <h1>Jelena Feliciano</h1>
                     <h3>Freelance <span>{ /**add changing titles */} </span> </h3>
-                
-                    <a href="#portfolio">
-                        <img src="assets/assets/downarrow_121316.png" alt="" />
-                    </a>
+                   
                 </div>
+                <a href="#portfolio">
+                        <img src="assets/downarrow_121316.png" alt="" />
+                </a>
             </div>
         </div>
     )
