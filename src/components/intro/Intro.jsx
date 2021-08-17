@@ -15,7 +15,6 @@ export default function Intro() {
             backSpeed: 60, //type back speed in milliseconds doc found in npm ityped docs
             strings: ["Developer", "Designer", "Content Creator"] //strings to replace text in h3 span tags
         })
-        console.log(textRef);
     }, [])
     return (
         <div className="intro" id="intro">
