@@ -11,9 +11,8 @@ import{
 } from "../../data";
 
 export default function Portfolio() {
-    //decide whether active or not
-    const [selected, setSelected] = useState('featured');
-    const [data, setData] = useState([]);
+    const [selected, setSelected] = useState('featured');     //decide whether active or not
+    const [data, setData] = useState([]);     //after a link is selected display data 
     //create list array to map through;
     const list = [
         {
@@ -63,19 +62,20 @@ export default function Portfolio() {
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <ul>
-                {list.map((item) => (
+                {list.map((item, i) => (
                     <PortfolioList 
                     title={item.title} 
                     active={selected === item.id} 
                     setSelected={setSelected}
                     id={item.id}
+                    key={i}
                      />
                 ))}
             </ul>
             <div className="container">
                 {data.map((d)=> (
-                    <div className="item">
-                        <img src={d.img} id={d.id} alt="" />
+                    <div className="item" key={d.id}>
+                        <img src={d.img}  alt="" />
                         <h3>{d.title}</h3>
                     </div>
                 ))}

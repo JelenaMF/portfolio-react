@@ -11,8 +11,8 @@ export const featuredPortfolio = [
     },
     {
         id: 3,
-        title: "Event Registration Form",
-        img: "./assets/eform.jpg"
+        title: "Students Directory",
+        img: "./assets/studentsDir.jpg"
     },
 ]
 
@@ -36,6 +36,11 @@ export const webPortfolio = [
     id: 4,
     title: "Link Four",
     img: "./assets/Link4.jpg"
+    },
+    {
+        id: 5,
+        title: "Students Directory",
+        img: "./assets/studentsDir.jpg"
     }
 ]
 
