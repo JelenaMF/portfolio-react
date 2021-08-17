@@ -2,17 +2,17 @@ export const featuredPortfolio = [
      {
          id: 1,
          title: "Event Registration Form",
-         img: "https://jelena-portfolio.herokuapp.com/static/images/eventform550.jpg"
+         img: "./assets/eform.jpg"
      },
      {
         id: 2,
         title: "Employee Directory",
-        img: "https://jelena-portfolio.herokuapp.com/static/images/empdir550.jpg"
+        img: "./assets/empDir.jpg"
     },
     {
         id: 3,
         title: "Event Registration Form",
-        img: "https://jelena-portfolio.herokuapp.com/static/images/eventform550.jpg"
+        img: "./assets/eform.jpg"
     },
 ]
 
@@ -20,22 +20,22 @@ export const webPortfolio = [
     {
         id: 1,
         title: "Ruth Bader Ginsburg Quotes",
-        img: "https://jelena-portfolio.herokuapp.com/static/images/rgb520.jpg"
+        img: "./assets/rgb250.jpg"
     },
     {
        id: 2,
        title: "Event Registration Form",
-       img: "https://jelena-portfolio.herokuapp.com/static/images/eventform550.jpg"
+       img: "./assets/eform.jpg "
    },
    {
        id: 3,
        title: "Employee Directory",
-       img: "https://jelena-portfolio.herokuapp.com/static/images/empdir550.jpg"
+       img: "./assets/empDir.jpg"
    },
    {
     id: 4,
     title: "Link Four",
-    img: "https://jelena-portfolio.herokuapp.com/static/images/link4start.jpg"
+    img: "./assets/Link4.jpg"
     }
 ]
 
@@ -43,17 +43,17 @@ export const mobilePortfolio = [
     {
         id: 1,
         title: "What's the phrase? Game",
-        img: "./components/dataAssets/game250.jpg"
+        img: "./assets/game250.jpg"
     },
     {
        id: 2,
        title: "Event Registration Form",   /** update later  */
-       img: "./eform.jpg"
+       img: "./assets/eform.jpg"
    },
    {
        id: 3,
        title: "Event Registration Form",   /** update later  */
-       img: "./eform.jpg"
+       img: "./assets/eform.jpg"
    },
 ]
 
@@ -61,17 +61,17 @@ export const designPortfolio = [
     {
         id: 1,
         title: "Event Registration Form",
-        img: "./eform.jpg"  /** update later  */
+        img: "./assets/eform.jpg"  /** update later  */
     },
     {
        id: 2,
        title: "Event Registration Form",  /** update later  */
-       img: "./eform.jpg"
+       img: "./assets/eform.jpg"
    },
    {
        id: 3,
        title: "Event Registration Form",  /** update later  */
-       img: "./eform.jpg"
+       img: "./assets/eform.jpg"
    },
 ]
 
@@ -79,16 +79,16 @@ export const contentPortfolio = [    /** update later  */
     {
         id: 1,
         title: "Event Registration Form",
-        img: "./eform.jpg"
+        img: "./assets/eform.jpg"
     },
     {
        id: 2,
        title: "Event Registration Form",
-       img: "./eform.jpg"
+       img: "./assets/eform.jpg"
    },
    {
        id: 3,
        title: "Event Registration Form",
-       img: "./eform.jpg"
+       img: "./assets/eform.jpg"
    },
 ]
