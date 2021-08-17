@@ -1,8 +1,16 @@
 import './works.scss'
-import {PhoneAndroid} from "@material-ui/icons";
 
 
 export default function Works() {
+    // const data = [
+    //     {
+    //         id: 1,
+    //         icon: 1,
+    //         title: 1,
+    //         desc: 1,
+    //         img: "./assets/placeholder.jpg"
+    //     }
+    // ]
     return (
         <div className="works" id="works">
             <div className="slider">
@@ -11,7 +19,7 @@ export default function Works() {
                         <div className="left">
                             <div className="leftContainer">
                                 <div className="imgContainer">
-                                    <PhoneAndroid className="icon" />
+                                    <img src="./assets/phone.png" alt="" />
                                 </div>
                                 <h2>Registration Form</h2>
                                 <p> This application can be accessed on your mobile device to capture clients and guests from home or
