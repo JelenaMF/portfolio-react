@@ -1,17 +1,28 @@
+import {useState} from 'react';
 import './contact.scss'
 
 export default function Contact() {
+    const [message, setMessage] = useState(false)
+    const handleSubmit = (e) => {
+        const input = document.getElementById('message');
+        input.value = '';
+        e.preventDefault();
+        setMessage(true);
+
+    }
+
     return (
         <div className="contact" id="contact">
             <div className="left">
-                <img src="" alt="" />
+                <img src="./assets/contact.gif" alt="" />
             </div>
             <div className="right">
                 <h2>Contact</h2>
-                <form action="">
+                <form onSubmit={handleSubmit}>
                     <input type="text" placeholder="email" />
-                    <textarea placeholder="message"></textarea>
+                    <textarea id="message" placeholder="message"></textarea>
                     <button type="submit">Send</button>
+                    {message && <span>Thanks, I'll reply ASAP! ;)</span>}
                 </form>
             </div>
         </div>
