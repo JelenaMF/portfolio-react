@@ -1,4 +1,12 @@
 
 .contact{
     background-color: #FFD23F;
+    display: flex;
+
+    .left{
+        flex:1;
+    }
+    .right{
+        flex: 1;
+    }
 }
