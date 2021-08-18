@@ -23,7 +23,7 @@ export default function Works() {
         },
         {
             id: 3,
-            icon: "./assets/phone.png",
+            icon: "./assets/writing.png",
             title: "Branding (placeholder)",
             desc: "we will describe what this is when we know more about what will be placed here.",
             img: "./assets/placeholder2.jpg"
