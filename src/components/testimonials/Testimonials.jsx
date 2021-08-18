@@ -8,7 +8,7 @@ export default function Testimonials() {
             title: "CEO",
             img: "http://ofad.org/files/imagecache/daily_picture/daily-photo/recent-and-random-portraits_8.jpg",
             icon: {
-                img:"./assets/youtube.png",
+                img:"./assets/twitter_icon.png",
                 alt:"Youtube icon"},
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
@@ -29,7 +29,7 @@ export default function Testimonials() {
             title: "CEO",
             img: "https://i.pinimg.com/originals/f9/a7/41/f9a7415027a2ce4913a6b0d74ed4d7d7.jpg",
             icon: {
-                img:"./assets/youtube.png",
+                img:"./assets/instagram_logo.png",
                 alt:"Youtube icon"},
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
