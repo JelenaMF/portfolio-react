@@ -3,6 +3,12 @@ import './contact.scss'
 
 export default function Contact() {
     const [message, setMessage] = useState(false)
+
+    /**
+     * the function `handleSubmit` will prevent refreshing the page when submit is clicked 
+     * @param {*} e - event 
+     * removes message entered in the input field. and displays thank you message once submitted.
+     */
     const handleSubmit = (e) => {
         const input = document.getElementById('message');
         input.value = '';
