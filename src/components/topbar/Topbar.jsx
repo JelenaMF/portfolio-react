@@ -6,7 +6,9 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">genius.</a>
+                    <a href="#intro" className="logo">
+                        <img src="./assets/dynodev-trans-bl432X165.png" alt="" />
+                    </a>
                     <div className="itemContainer">
                         <Person className="icon" />
                         <span> 813-710-7309 </span>
