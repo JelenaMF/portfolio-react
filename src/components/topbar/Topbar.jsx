@@ -1,6 +1,13 @@
 import './topbar.scss';
 import {Person, Mail } from "@material-ui/icons";
 
+/** `Topbar` function 
+ * @param menuOpen - bool
+ * @param setMenuOpen - bool
+ * when menu is open setMenuOpen is set to true display the white logo and text and the background color to the $maincolor
+ * when the hamburger is clicked again setMenuOpen is set to false and black logo is displayed on a white background. menu disappears to the right. 
+ */
+
 export default function Topbar({menuOpen, setMenuOpen}) {
     return (
         <div className={"topbar " + (menuOpen && "active")}>
