@@ -7,7 +7,9 @@ export default function Topbar({menuOpen, setMenuOpen}) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">
-                        <img src="./assets/dynodev-trans-bl432X165.png" alt="" />
+                        <img className="black" src="./assets/dynodev-trans-bl432X165.png" alt="DynoDev logo" />
+                        <img className= "white active" src="./assets/dynodev-trans-w385X160.png" alt="DynoDev logo" />
+                            
                     </a>
                     <div className="itemContainer">
                         <Person className="icon" />

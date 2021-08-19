@@ -24,6 +24,10 @@
                 img{
                     height: 60px;
                 }
+                .white{
+                    display: none;
+                }
+               
             }
 
             .itemContainer{
@@ -69,6 +73,18 @@
     &.active{
          background-color: $mainColor;
          color:white;
+
+         .logo{
+             .black{
+                display: none;
+             }
+             .white{
+                 &.active{
+                     display:block;
+                 }
+             }
+            
+         }
          .hamburger {
              span{
                  &:first-child{
